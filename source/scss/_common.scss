@@ -1,0 +1,120 @@
+.section{
+	padding: 120px 0px;
+}
+
+.section-sm{
+	padding: 60px 0px;
+}
+
+.btn{
+	padding: 18px 38px;
+	border: 2px solid transparent;
+	text-transform: uppercase;
+	border-radius:0px;
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: 600;
+	box-shadow: rgb(153, 153, 153) 0px 0px 0px 0px;
+
+	 &:focus{
+	    outline: 0px;
+	    border: 0px;
+	    box-shadow: none;
+	  }
+}
+
+.btn-main{
+	background: $primary-color;
+	color: $white;
+
+	&:hover{
+		color: $white!important;
+		background: $black;
+	}
+}
+
+.btn-black{
+	background: $black;
+	color: $white;
+
+	&:hover{
+		background: $primary-color;
+		color: $white;
+	}
+}
+
+.btn-white{
+	background: $white;
+	color: $black;
+	border-color: $white;
+
+	&:hover{
+		background: transparent;
+		color: $white;
+	}
+}
+
+
+a{
+	color: $black;
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+
+	&:hover{
+		color: $primary-color;
+		text-decoration: none;
+		outline:none;
+	}
+
+}
+
+.bg-primary{
+	background: $primary-color!important;
+}
+
+.bg-secondary{
+	background: $secondary-color!important;
+}
+.bg-extra{
+	background: $extra-color!important;
+}
+
+.text-color{
+	color: $primary-color;
+}
+
+.page-title{
+	h1{
+		position: relative;
+		padding-bottom: 30px;
+
+		&:after{
+			position: absolute;
+			content:"";
+			left: 50%;
+			bottom:0px;
+			width: 40px;
+			height: 2px;
+			margin-left: -25px;
+			background: $primary-color;
+		}
+	}
+}
+
+
+@include mobile{
+	h2, .h2 {
+	    font-size: 32px;
+	    line-height: 43px;
+	}
+}
+
+@include mobile-xs{
+	h2, .h2 {
+	    font-size: 32px;
+	    line-height: 43px;
+	}
+}

@@ -1,0 +1,27 @@
+@@include('header.htm')
+@@include('blocks/nav-2.htm')
+@@include('blocks/page-title.htm', {
+"title": "Blog Grid with Sidebar",
+"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, quam."
+})
+
+<section class="section blog-post">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="row">
+					@@include('blocks/grid-posts-column.htm')
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				@@include('blocks/post-sidebar.htm')
+			</div>
+		</div>
+		
+		@@include('blocks/post-nav.htm')
+	</div>
+</section>
+
+@@include('blocks/footer.htm')
+@@include('footer.htm')

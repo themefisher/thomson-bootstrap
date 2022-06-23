@@ -1,0 +1,175 @@
+.letter-spacing{
+	letter-spacing: 1px;
+}
+
+
+.post{
+	.image-content{
+		position: relative;
+
+		img{
+			width: 100%;
+		}
+	}
+
+	.author{
+		img{
+			width: 40px;
+			height: 40px;
+			border-radius: 100%;
+		}
+	}
+
+	.post-content{
+		margin-top: 30px;
+		h4{
+			margin-top: 10px;
+			-webkit-transition: all .35s ease;
+			   -moz-transition: all .35s ease;
+			    -ms-transition: all .35s ease;
+			     -o-transition: all .35s ease;
+			        transition: all .35s ease;
+		}
+
+		a:hover h4{
+			color: $primary-color;
+		}
+	}
+}
+
+
+.pagination{
+	margin-top: 70px;
+	li a{
+		background: #f6f6f6;
+		font-size: 14px;
+		font-weight: 600;
+		display: inline-block;
+		padding: 9px 18px;
+		color: #666666;
+		transition: .3s;
+
+		&:hover{
+			background: $primary-color;
+			color: $white;
+		}
+	}
+	li.active a{
+		background: $primary-color;
+		color: $white;
+	}
+}
+
+
+// Sidebar
+// 
+
+.sidebar-widget{
+	.widget{
+		padding-left: 20px;
+	}
+	.widget-title{
+		text-transform: capitalize;
+		position: relative;
+		padding-bottom: 20px;
+
+		&:after{
+			position: absolute;
+			content:"";
+			left: 0px;
+			bottom: 0px;
+			width: 30px;
+			height: 2px;
+			background: $black;
+		}
+	}
+
+	.follow{
+		a{
+			margin-right: 10px;
+		}
+	}
+
+	.tags{
+		a{
+			text-transform: capitalize;
+			font-size: 15px;
+			padding: 2px 13px;
+			display: inline-block;
+			margin-bottom: 8px;
+			background:  $border-color;
+		}
+	}
+
+	.category{
+		ul{
+			line-height: 40px;
+
+			li{
+				font-size: 15px;
+				text-transform: capitalize;
+			}
+		}
+	}
+}
+.post-body{
+	span{
+		font-size: 13px;
+		letter-spacing: 1px;
+	}
+}
+
+
+/// SINGlE POSt
+
+.single-post{
+	margin-bottom: 70px;
+}
+.share{
+	ul li a{
+		margin-right: 20px;
+	}
+}
+
+
+
+.mb-45{
+	margin-bottom: 45px;
+}
+
+.comments-text{
+	p{
+		font-size: 14px;
+		margin-bottom: 10px;
+		line-height: 26px;
+	}
+}
+
+
+@include mobile{
+	.media {
+	    display: block;
+
+	    img{
+	    	margin-bottom: 10px;
+	    }
+	}
+}
+
+@include mobile-xs{
+	.media {
+	    display: block;
+	     img{
+	    	margin-bottom: 10px;
+	    }
+	}
+}
+@include tablet{
+	.media {
+	    display: block;
+
+	     img{
+	    	margin-bottom: 10px;
+	    }
+	}
+}

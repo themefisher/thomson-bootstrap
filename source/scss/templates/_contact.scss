@@ -1,0 +1,43 @@
+#map{
+	height: 300px;
+	margin: 75px 0px;
+}
+
+.form-control{
+	border-radius: 0px;
+	height: 45px;
+	border-color: $extra-color;
+
+	&:focus{
+		box-shadow: none;
+		border-color: $primary-color;
+	}
+}
+
+textarea.form-control{
+	height: auto;
+}
+
+.text-black{
+	color: $black;
+}
+
+.contact-title {
+	h2{
+		position: relative;
+		padding-bottom: 30px;
+
+		&:after {
+
+	    position: absolute;
+	    content: "";
+	    left: 50%;
+	    bottom: 0px;
+	    width: 40px;
+	    height: 2px;
+	    margin-left: -25px;
+	    background: $primary-color;
+
+	}
+	}
+}
